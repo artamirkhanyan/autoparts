@@ -1,0 +1,529 @@
+body {
+        background-color: #fff;
+        /*margin: 40px;*/
+        font: 16px/20px normal Helvetica, Arial, sans-serif;
+        color: #4F5155;
+}
+@-moz-document url-prefix() {
+    body {
+        font: 16px/20px normal Helvetica, Arial;
+    }
+}
+
+a {
+        color: #003399;
+        background-color: transparent;
+        font-weight: normal;
+}
+
+h1 {
+        color: #444;
+        background-color: transparent;
+        border-bottom: 1px solid #D0D0D0;
+        font-size: 19px;
+        font-weight: normal;
+        margin: 0 0 14px 0;
+        padding: 14px 15px 10px 15px;
+}
+
+code {
+        font-family: Consolas, Monaco, Courier New, Courier, monospace;
+        font-size: 16px;
+        background-color: #f9f9f9;
+        border: 1px solid #D0D0D0;
+        color: #002166;
+        display: block;
+        margin: 10px 0 10px 0;
+        padding: 10px;
+        text-align: center;
+}
+
+#body{
+        margin: 0 15px 0 15px;
+}
+
+p.footer{
+        text-align: right;
+        font-size: 11px;
+        border-top: 1px solid #D0D0D0;
+        line-height: 32px;
+        padding: 0 10px 0 10px;
+        margin: 20px 0 0 0;
+}
+
+#container{
+        /*margin: 3px;*/
+        border: 1px solid #D0D0D0;
+        -webkit-box-shadow: 0 0 8px #D0D0D0;
+}
+
+.slogan{
+    position: relative;
+    margin-top: -4%;
+    margin-bottom: 40px;
+    padding: 10px;
+    width: 100%;
+    background: #273045;
+    font-size: 1.4em;
+    color: #ffffff;
+    font-family: 'Julius Sans One', sans-serif;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#slogan_wrapper{
+    width: 430px;    
+    margin: 0 auto;    
+    display: inline-block;
+	max-width:100%;
+}
+#slogan_wrapper a{
+    display: block;
+    text-decoration: none;
+}
+.slogan_1{
+    display: block;
+    color: #4E85E9;
+    margin-bottom: 5px;
+    font-size: 25px;
+    font-weight: 600;
+}
+.slogam_2{
+    color: rgba(255, 255, 255, 0.82);
+    font-size: 18px;
+}
+
+
+.my_search_td{
+    position: relative;
+    text-align: center;
+}
+
+.set_part_count_wrapper{
+    position: absolute;
+    display: none;
+    width: 100%;
+    padding: 4px 0px;
+    top: -10px;
+    left: 0;
+    border: 1px solid #ddd;     
+    background-color: #4F4F4F;
+    z-index: 1;
+}
+
+.set_part_count, .part_count{
+    width: 45%;
+}
+.part_count{
+    margin-right: 5px;
+}
+
+.part_count_cart{
+    outline: none;
+    width: 56px;
+}
+
+.part_count{
+    outline: none;
+    width: 56px;
+    margin-bottom: 5px;
+}
+
+.user_order{
+  border: 1px solid rgb(221, 221, 221);
+  border-radius: 10px;
+  padding: 10px;
+  margin: 20px 5px;
+  background-color: rgb(252, 252, 252);
+}
+.search_th{
+    font-size: 1.7em;
+    color: #161616;
+    font-family: 'Exo 2', sans-serif !important;
+    background: #f5f5f5;
+    padding: 6px 20px;
+    margin: 8% 0;
+    text-align: center;
+    font-weight: bold;
+}
+
+.search_th2{
+    font-size: 16px;
+    color: rgba(119, 119, 119, 0.99);
+    font-family: 'Julius Sans One', sans-serif !important;
+    background: #f5f5f5;
+    padding: 6px 20px;
+    margin: 8% 0;
+    text-align: center;
+}
+@-moz-document url-prefix() {
+    .search_th{
+        font-family: 'Exo 2' !important;
+    }
+}
+
+.search_td{
+    font-size: 0.9em;
+    text-align: center;
+}
+
+.user_data{
+    height: 8%;
+}
+
+.user_cart{
+    color: #4E85E9 !important;
+    font-size: 1em !important;
+    float: left;
+    margin-top: 5px;
+    position: absolute;
+    top: -4px;
+    left: 32px;
+}
+.cart_icon{
+    color: #9DB2C4 !important;
+    font-size: 1.7em !important;
+    float: left;
+    margin-right: 7px;
+    margin-top: 10px;
+    position: relative;
+    width: 35px;
+}
+
+.cart_li span{
+    color: #ffffff !important;
+}
+a.cart_li{
+	text-decoration:none;
+}
+
+.cart_li:hover .cart_icon, .user_orders{
+    color: #E8E8E8 !important;
+    -webkit-transition: .2s all linear;
+    -moz-transition: .2s all linear;
+    -o-transition: .2s all linear;
+    transition: .2s all linear;    
+}
+
+.cart_li:hover .user_orders{
+    color: #E8E8E8 !important;
+    -webkit-transition: .2s all linear;
+    -moz-transition: .2s all linear;
+    -o-transition: .2s all linear;
+    transition: .2s all linear;    
+}
+
+.cart_li:hover .user_signout{
+    color: #E8E8E8 !important;
+    -webkit-transition: .2s all linear;
+    -moz-transition: .2s all linear;
+    -o-transition: .2s all linear;
+    transition: .2s all linear;    
+}
+
+.cart_li:hover .label_pointer{
+    color: #ffffff !important;
+    -webkit-transition: .2s all linear;
+  -moz-transition: .2s all linear;
+  -o-transition: .2s all linear;
+  transition: .2s all linear;
+}
+
+.cart_li:hover .user_cart{
+    color: #ffffff !important;
+    -webkit-transition: .2s all linear;
+    -moz-transition: .2s all linear;
+    -o-transition: .2s all linear;
+    transition: .2s all linear;
+}
+
+.label_pointer{
+    cursor: pointer;
+}
+
+.menu_label{
+    font-size: 17px !important;
+    text-align: center;
+}
+
+.user_orders{
+    color: #9DB2C4 !important;
+    font-size: 1.4em !important;
+    float: left;
+    margin-right: 40px;
+    margin-top: 10px;
+}
+
+.user_signout{
+    color: #9DB2C4 !important;
+    font-size: 1.7em !important;
+    float: left;
+    margin-right: 40px;
+    margin-top: 10px;
+}
+
+.parts_table{
+      font-size: 0.6em;
+}
+
+.parts_table tbody tr{
+    font-size: 16px;
+	background-color: white;
+}
+
+.valuta_btn{
+    display: inline-block !important;
+    width: 49.33333%;    
+    text-align: center;
+}
+
+.valuta_amd{
+    margin-left: -3px;
+    border-left: 2px solid #222222;
+}
+
+.valuta_icon{
+    margin-right: 5px;
+}
+
+.active_currency{
+    background: #373737;
+}
+
+.car_logo_a{
+    display: inline-block !important;
+    width: 116px;  
+    height: 58px;
+    text-align: center;
+}
+div.catalog .car_logo_a{
+    float: left;
+}
+.car_logo_a span{
+    display: block;
+    margin-top: 27px;
+    font-size: 15px;
+}
+
+.brands{
+    background-image: url("/public/img/brands.png");
+    background-size: 760px 265px;
+}
+.toyota{
+    background-position: -1016px 65px;
+}
+.nissan{
+    background-position: -643px 191px;
+}
+.mitsubishi{
+    background-position: -512px 194px;
+}
+.lexus{
+    background-position: 7px 196px;
+}
+.infinity{
+    background-position: -256px 195px;
+}
+.kia{
+    background-position: -644px 254px;
+}
+.hyundai{
+    background-position: -252px 265px;
+}
+.honda{
+    background-position: -124px 260px;
+}
+.subaru{
+    background-position: -754px -200px;
+}
+.mazda{
+    background-position: -125px 195px;
+}
+.suzuki{
+    background-position: -883px -201px;
+}
+
+.catalog{
+    width: 100%;
+    overflow: hidden;
+}
+
+.catalog_item{
+    position: relative;
+    width: 116px !important;
+    height: 58px !important;
+    margin-bottom: 10px;
+}
+.catalog_item:hover{
+    opacity: 0.3;
+}
+
+.catalog_item label{
+  margin-top: 53px;
+}
+
+.catalog_text{
+    width: 65%;
+    height: 44px;
+    padding: 12px 5px;
+    background-color: #ffffff;
+    float: left;
+    color: rgb(165, 165, 166);
+    font-size: 13px;
+}
+.weight_question{
+    cursor: pointer;
+}
+
+/*.weight_question::after{
+    display: none;
+    position: absolute;
+    width: 103px;
+    padding: 3px;
+    top: 18px;
+    left: -44px;
+    content: "Уточните цену за вес товара";    
+    background: #F8F8F8;
+    border: 1px solid #D0D0D0;
+    -webkit-box-shadow: 0 0 8px #D0D0D0;
+    color: black;
+    font-size: 0.8em;
+    font-weight: normal;
+    -webkit-transition: color .15s;
+    -moz-transition: color .15s;
+    -o-tra-webkitnsition: color .15s;
+    transition: color .15s;
+}*/
+
+.weight_question:hover::after{
+    display: block;
+}
+
+.menu_item{
+    opacity: 0.85;
+    float: left;
+    margin-right: 1%;   
+}
+.menu{
+    margin-bottom: 70px;
+}
+.menu ul li:nth-child(1){
+    width: 15.32%;
+    height: 60px;
+}
+.menu ul li:nth-child(2){
+    width: 17.5%;
+    height: 60px;
+}
+.menu ul li:nth-child(3){
+    width: 12%;
+    height: 60px;
+}
+.menu ul li:nth-child(4){
+    width: 12%;
+    height: 60px;
+}
+.menu ul li:nth-child(5){
+    width: 17%;
+    height: 60px;
+}
+.menu ul li:nth-child(6){
+    width: 21%;
+    height: 60px;
+    margin-right: 0px;
+    padding: 7px;
+    text-align: center;
+}
+.menu_item .change_1{
+    position: relative;        
+    display: block;
+    color: #ffffff;
+    margin-bottom: 4px;
+}
+.menu_item .change_1 img{
+    width: 10px;
+    margin-left: 3px;
+}
+.menu_item .change_2{
+    display: block;
+    color: #ffffff;
+    margin-bottom: 4px;
+    font-size: 13px;
+}
+.menu_item .change_3{
+    display: block;
+    color: #ffffff;
+}
+.form-group p{
+    color: red;
+}
+
+#logo_img{
+  width: 188px;
+  height: 69px;
+  float: left;
+  background-image: url('/public/images/logo2.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-top: -9px;
+}
+
+
+/******************Orders Search************************/
+#orders_search {
+    float: right;
+    margin-top: 9px;
+    width: 250px;
+}
+
+.orders_search {
+    padding: 5px 0;
+    width: 270px;
+    position: relative;
+    float: left;
+    line-height: 22px;
+}
+
+    .orders_search input {
+        width: 250px;
+        float: Left;
+        height: 40px;
+        line-height: 18px;
+        border-radius:0px;
+        margin-bottom: 10px;
+    }
+
+.orders_search_btn {
+    height: 40px;
+    width: 100px !important;
+    right: 0;
+    color: #ffffff;
+    background: #9DB2C4;
+    padding: 10px 12px;
+    border: none;
+    cursor: pointer;
+    width: 35.33%;
+    line-height: 1.5em;
+    outline: none;
+}
+
+.orders_search_btn:hover{
+    background: #1A202D;
+  color: #E8E8E8;
+  -webkit-transition: .2s all linear;
+  -moz-transition: .2s all linear;
+  -o-transition: .2s all linear;
+  transition: .2s all linear;
+}
+
+.order_01{
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 650px) {
+	#logo_img{
+		  width:100%!important; 	
+		  background-position: 50% 0px;
+
+	}
+}
