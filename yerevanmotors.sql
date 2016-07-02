@@ -35,12 +35,7 @@ CREATE TABLE IF NOT EXISTS `admin` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
 
---
--- Dumping data for table `admin`
---
 
-INSERT INTO `admin` (`id`, `userName`, `password`, `barmalogin`, `barmapass`) VALUES
-(1, 'adminyerevanmotors', '21232f297a57a5a743894a0e4a801fc3', 'surenkhudoyan@mail.ru', 'madagaskar');
 
 -- --------------------------------------------------------
 
